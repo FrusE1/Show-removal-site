@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'icons';
+  src: url('../fonts/icons.eot?izq03b');
+  src: url('../fonts/icons.eot?izq03b#iefix') format('embedded-opentype'),
+    url('../fonts/icons.ttf?izq03b') format('truetype'),
+    url('../fonts/icons.woff?izq03b') format('woff'),
+    url('../fonts/icons.svg?izq03b#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow:before {
+  content: "\e900";
+}
+
+.icon-bulldozer:before {
+  content: "\e901";
+}
+
+.icon-call:before {
+  content: "\e902";
+}
+
+.icon-check:before {
+  content: "\e903";
+}
+
+.icon-documents:before {
+  content: "\e904";
+}
+
+.icon-instagram:before {
+  content: "\e905";
+}
+
+.icon-snowing:before {
+  content: "\e906";
+}
+
+.icon-viber:before {
+  content: "\e907";
+}
+
+.icon-vk:before {
+  content: "\e908";
+}
+
+.icon-whatsapp:before {
+  content: "\e909";
+}
