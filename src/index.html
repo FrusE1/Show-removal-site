@@ -11,47 +11,52 @@
 <body>
   <header>
     <div class="container">
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+      <div class="row mb-2 mt-2">
+        <div class="header-logo col-lg-4 col-xs-12 d-flex align-items-center">
+          <a class="navbar-brand nav-logo" href="#">
+            <img src="../src/images/logo.png" alt="Logo">
+          </a>
+          <div class="logo__text">Механизированная уборка и вывоз снега</div>
+        </div>
+        <div class="header-contacts contacts col-8">
+          <div class="row d-flex justify-content-between align-items-center">
+            <div class="col-4">
+              <div class="contacts__social social d-flex justify-content-end">
+                <a target="_blank" class="nav-link icon icon-vk" aria-current="page" href="https://vk.com"></a>
+                <a target="_blank" class="nav-link icon icon-instagram" aria-current="page"
+                  href="https://www.instagram.com/"></a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="contacts__support support d-flex justify-content-end">
+                <div class="support-social d-flex align-items-center">
+                  <a target="_blank" class="support-social__link nav-link d-flex align-items-center" aria-current="page"
+                    href="https://www.whatsapp.com/">
+                    <i class="icon icon-whatsapp"></i>
+                    <div class="support-social__text">WhatsApp</div>
+                  </a>
+                  <div class="support-social__line"></div>
+                  <a target="_blank" class="support-social__link nav-link d-flex align-items-center" aria-current="page"
+                    href="https://www.viber.com/">
+                    <i class="icon icon-viber"></i>
+                    <div class="support-social__text">Viber</div>
+                  </a>
+                </div>
+                <div class="support-call">
+                  <a target="_blank" class="nav-link d-flex align-items-center" aria-current="page"
+                    href="tel:+88129815611">
+                    <div class="support-call__circle"><i class="icon icon-call"></i></div>
+                    <div class="support-call__text">
+                      <div class="support-call__phone">8 (812) 345 67 89</div>
+                      <div>заказать звонок</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
+      </div>
     </div>
   </header>
 </body>
