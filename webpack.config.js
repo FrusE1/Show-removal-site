@@ -82,4 +82,10 @@ module.exports = {
       },
     ],
   },
+  resolve: {
+    alias: {
+      // '@variables': path.resolve(__dirname, 'src/variables/variables.scss'),
+      '@mixins': path.resolve(__dirname, 'src/styles/mixins.scss'),
+    }
+  }
 };
