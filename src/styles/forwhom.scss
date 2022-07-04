@@ -1,0 +1,42 @@
+@import "@mixins";
+
+.customer {
+  @include adaptive-value("margin-bottom", 80, 20, 1);
+
+  &__title {
+    @include adaptive-value("font-size", 30, 16, 1);
+    font-weight: 800;
+    color: #0586E8;
+  }
+
+  &__line {
+    width: 80px;
+    height: 2px;
+    @include adaptive-value("margin-top", 20, 2, 1);
+    @include adaptive-value("margin-bottom", 40, 20, 1);
+    background-color: #C4C4C4;
+  }
+
+  &__rows {
+    &>*:not(:last-child) {
+      @include adaptive-value("margin-right", 10, 5, 1);
+      margin-bottom: 8px
+    }
+  }
+
+  &__row {
+    @include adaptive-value("padding", 15, 10, 1);
+    @include adaptive-value("border-radius", 30, 15, 1);
+    box-shadow: 0px 0px 10px rgba(141, 149, 165, 0.23);
+  }
+
+  &__icon {
+    color: #1D4FCF;
+    @include adaptive-value("font-size", 32, 18, 1);
+    @include adaptive-value("margin-right", 10, 5, 1);
+  }
+
+  &__text {
+    @include adaptive-value("font-size", 16, 10, 1);
+  }
+}

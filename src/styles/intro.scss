@@ -8,30 +8,11 @@
   }
 
   &__row {
-    @include adaptive-value("padding-top", 100, 40, 1);
+    @include adaptive-value("padding-top", 100, 20, 1);
   }
-}
 
-@media(max-width: 767px) {
-  .intro {
-    &__container {
-      background-position: left;
-      background-size: 120%;
-    }
-
-    &__row {
-      background-color: rgba(255, 255, 255, 0.7);
-    }
-  }
-}
-
-@media(max-width: 425px) {
-  .intro {
-    &__container {
-      background-position: 20%;
-      background-size: 150%;
-    }
-
+  &__lead {
+    @include adaptive-value("margin-bottom", 80, 20, 1);
   }
 }
 
@@ -40,7 +21,7 @@
   &__top {
     max-width: 630px;
     color: #000;
-    @include adaptive-value("font-size", 30, 18, 1);
+    @include adaptive-value("font-size", 30, 16, 1);
     font-weight: 800;
 
     span {
@@ -60,7 +41,7 @@
   &__buttom {
     max-width: 500px;
     font-weight: 400;
-    @include adaptive-value("font-size", 18, 12, 1);
+    @include adaptive-value("font-size", 18, 10, 1);
 
     span {
       font-weight: 600;
@@ -84,109 +65,8 @@
 
   &__text {
     max-width: 240px;
-    @include adaptive-value("font-size", 14, 12, 1);
+    @include adaptive-value("font-size", 14, 10, 1);
     font-weight: 400;
-  }
-}
-
-// Discount
-
-.discount {
-  transform: translateY(-50%);
-
-  &__columns {
-    @include adaptive-value("padding", 30, 15, 1);
-    box-shadow: 0px 0px 14px rgba(148, 148, 148, 0.25);
-    border-radius: 30px 0 0 30px;
-
-    &>*:not(:last-child) {
-      @include adaptive-value("margin-right", 15, 10, 1);
-    }
-
-    form {
-      width: 277px;
-    }
-  }
-
-  &__column {
-    &>input:not(:last-child) {
-      margin-bottom: 12px;
-    }
-  }
-
-  &__text {
-    max-width: 350px;
-    @include adaptive-value("font-size", 21, 14, 1);
-    @include adaptive-value("margin-bottom", 16, 10, 1);
-
-    span {
-      color: #0586E8;
-    }
-  }
-
-  &__input {
-    width: 100%;
-    @include adaptive-value("padding", 18, 10, 1);
-    border-radius: 8px;
-    @include adaptive-value("font-size", 14, 12, 1);
-    font-weight: 400;
-    border: 1px solid #C4C4C4;
-  }
-
-  &__button {
-    width: 100%;
-    @include adaptive-value("padding-top", 16, 10, 1);
-    @include adaptive-value("padding-bottom", 16, 10, 1);
-    background-color: #1D4FCF;
-    border: none;
-    border-radius: 8px;
-    @include adaptive-value("font-size", 16, 12, 1);
-    color: #fff;
-    box-shadow: 0px 0px 10px #1D4FCF;
-    transition: 0.5s all ease;
-
-    &:hover,
-    &:focus {
-      background-color: #1142be;
-      box-shadow: 0px 0px 6px #1D4FCF;
-    }
-  }
-}
-
-.agreement {
-  position: relative;
-  color: #656565;
-  @include adaptive-value("font-size", 12, 10, 1);
-  font-weight: 300;
-  cursor: pointer;
-  padding-left: 25px;
-
-  &__checkbox {
-    position: absolute;
-    left: 0;
-    width: 18px;
-    height: 18px;
-    border: 2px solid #656565;
-    border-radius: 50%;
-    appearance: none;
-    transition: 0.5s all ease;
-
-    &:checked {
-      border-color: #1D4FCF;
-    }
-
-    &:checked~.agreement__mark {
-      display: inline-block;
-      color: #1D4FCF;
-    }
-  }
-
-  &__mark {
-    padding-top: 3px;
-    font-size: 12px;
-    position: absolute;
-    display: none;
-    left: 3px;
   }
 }
 
@@ -208,7 +88,7 @@
 @media(max-width: 425px) {
   .intro {
     &__container {
-      background-position: 20%;
+      background-position: 20% 100%;
       background-size: 150%;
     }
 
@@ -220,9 +100,5 @@
     &__row {
       @include adaptive-value("padding-bottom", 100, 40, 1);
     }
-  }
-
-  .discount {
-    transform: none;
   }
 }
