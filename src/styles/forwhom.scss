@@ -3,25 +3,12 @@
 .customer {
   @include adaptive-value("margin-bottom", 80, 20, 1);
 
-  &__title {
-    @include adaptive-value("font-size", 30, 16, 1);
-    font-weight: 800;
-    color: #0586E8;
-  }
-
-  &__line {
-    width: 80px;
-    height: 2px;
-    @include adaptive-value("margin-top", 20, 2, 1);
-    @include adaptive-value("margin-bottom", 40, 20, 1);
-    background-color: #C4C4C4;
-  }
-
   &__rows {
     &>*:not(:last-child) {
       @include adaptive-value("margin-right", 10, 5, 1);
-      margin-bottom: 8px
     }
+
+    margin-bottom: 8px
   }
 
   &__row {

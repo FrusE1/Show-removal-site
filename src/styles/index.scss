@@ -2,9 +2,24 @@
 @import "../styles/custom.scss";
 @import "../styles/header.scss";
 @import "../styles/intro.scss";
+@import "@mixins";
 
 * {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   line-height: 1.17;
+}
+
+.title {
+  @include adaptive-value("font-size", 30, 16, 1);
+  font-weight: 800;
+  color: #0586E8;
+}
+
+.line {
+  width: 80px;
+  height: 2px;
+  background-color: #C4C4C4;
+  @include adaptive-value("margin-top", 20, 2, 1);
+  @include adaptive-value("margin-bottom", 40, 20, 1);
 }
