@@ -1,0 +1,59 @@
+@import "@mixins";
+
+.price {
+  @include adaptive-value("padding-top", 80, 20, 1);
+  @include adaptive-value("padding-bottom", 80, 20, 1);
+
+  &__line {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &__btn {
+    @include adaptive-value("width", 277, 150, 1);
+  }
+}
+
+// Table
+
+.table-price {
+  @include adaptive-value("margin-bottom", 40, 20, 1);
+  @include adaptive-value("border-radius", 16, 10, 1);
+  box-shadow: 0px 0px 10px rgba(141, 149, 165, 0.23);
+
+  &__col {
+    &_head {
+      @include adaptive-value("border-radius", 16, 10, 1);
+      box-shadow: 0px 0px 10px rgba(141, 149, 165, 0.23);
+      color: #0586E8;
+
+      &~.table-price__col .table-price__cell {
+        border-top-style: none;
+      }
+
+      & .table-price__cell {
+        border-bottom-style: none;
+        border-top-style: none;
+      }
+    }
+
+    &:last-child .table-price__cell {
+      border-bottom-style: none;
+    }
+  }
+
+  &__cell {
+    @include adaptive-value("font-size", 18, 8, 1);
+    @include adaptive-value("padding-top", 20, 8, 1);
+    @include adaptive-value("padding-bottom", 20, 8, 1);
+    border: 1px solid #ECF6FD;
+
+    &:first-child {
+      border-left-style: none;
+    }
+
+    &:last-child {
+      border-right-style: none;
+    }
+  }
+}
