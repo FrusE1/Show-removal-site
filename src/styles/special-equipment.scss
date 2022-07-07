@@ -35,16 +35,6 @@
     @include adaptive-value("font-size", 20, 14, 1);
   }
 
-  &__arrow {
-    @include adaptive-value("font-size", 32, 25, 1);
-    color: #1D4FCF;
-
-    &_next {
-      transform: rotate(-180deg);
-      @include adaptive-value("padding-top", 35, 15, 1);
-    }
-  }
-
   &__cards {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -55,16 +45,15 @@
   }
 }
 
+.special-equipment .row {
+  margin-left: 0;
+}
+
 // Media
 
-@media(max-width: 768px) {
+@media(max-width: 767px) {
   .special-equipment {
-    &__inner {
-      @include adaptive-value("padding-left", 40, 22, 1);
-    }
-
     &__cards {
-
       &>*:nth-child(2n) {
         margin-right: 0;
       }

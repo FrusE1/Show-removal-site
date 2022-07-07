@@ -4,6 +4,11 @@
 @import "../styles/intro.scss";
 @import "@mixins";
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 * {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
@@ -40,5 +45,15 @@
   &:focus {
     background-color: #1142be;
     box-shadow: 0px 0px 6px #1D4FCF;
+  }
+}
+
+.carousel-arrow {
+  @include adaptive-value("font-size", 32, 25, 1);
+  color: #1D4FCF;
+
+  &_next {
+    transform: rotate(-180deg);
+    @include adaptive-value("padding-top", 35, 15, 1);
   }
 }
