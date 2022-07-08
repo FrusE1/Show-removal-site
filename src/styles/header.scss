@@ -2,42 +2,30 @@
 
 header {
   box-shadow: 0px 0px 10px rgba(148, 148, 148, 0.25);
-}
 
-// Logo
-.nav-logo {
-  padding-right: 20px;
-
-  &>img {
-    @include adaptive-value("height", 30, 24, 1);
+  & .support-social {
+    margin-right: 25px;
   }
 }
 
-.logo__text {
-  max-width: 155px;
-  font-weight: 400;
-  font-size: 12px;
-}
-
-
 // Contacts
 .icon {
-  font-size: 22px;
+  @include adaptive-value("font-size", 22, 18, 1);
   color: #C4C4C4;
 }
 
 .support-social__text {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 12px;
+  @include adaptive-value("font-size", 12, 10, 1);
 }
 
 .support-call__circle {
   display: flex;
   justify-content: center;
+  @include adaptive-value("width", 40, 34, 1);
+  @include adaptive-value("height", 40, 34, 1);
   align-items: center;
-  width: 40px;
-  height: 40px;
   border-radius: 50%;
   background-color: #1D4FCF;
   margin-right: 15px;
@@ -81,17 +69,13 @@ header {
   margin: 0 8px;
 }
 
-.support>*:not(:last-child) {
-  margin-right: 25px;
-}
-
 .support-call__text>*:last-child {
-  font-size: 14px;
+  @include adaptive-value("font-size", 14, 12, 1);
   font-weight: 400;
 }
 
 .support-call__phone {
-  font-size: 18px;
+  @include adaptive-value("font-size", 18, 14, 1);
   font-weight: 700;
 }
 

@@ -1,0 +1,39 @@
+@import "@mixins";
+
+.footer {
+  box-shadow: 0px 0px 15px rgba(148, 148, 148, 0.25);
+  @include adaptive-value("padding-top", 30, 10, 1);
+  @include adaptive-value("padding-bottom", 30, 10, 1);
+
+  &>*:first-child {
+    @include adaptive-value("margin-bottom", 40, 20, 1);
+  }
+
+  &__logo {
+    margin-bottom: 15px;
+  }
+
+  &__call {
+    margin-bottom: 12px;
+  }
+}
+
+.copy {
+
+  &__text {
+    @include adaptive-value("font-size", 12, 10, 1);
+    font-weight: 400;
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+}
+
+// Media
+
+@media(max-width: 577px) {
+  .footer__brand {
+    margin-bottom: 20px;
+  }
+}

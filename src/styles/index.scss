@@ -1,5 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
-@import "../styles/custom.scss";
+@import "custom.scss";
 @import "../styles/header.scss";
 @import "../styles/intro.scss";
 @import "@mixins";
@@ -13,6 +13,22 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   line-height: 1.17;
+}
+
+.logo {
+  &__link {
+    padding-right: 20px;
+
+    &>img {
+      @include adaptive-value("height", 30, 24, 1);
+    }
+  }
+
+  &__text {
+    max-width: 155px;
+    font-weight: 400;
+    @include adaptive-value("font-size", 12, 10, 1);
+  }
 }
 
 .title {
